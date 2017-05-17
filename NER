@@ -8,3 +8,27 @@ Named entity recognition:
  Named entity identification (the task is to correctly identify a named entity span without further classification, that
 is, to retrieve all named entity tokens) and named entity classification (the task is to correctly classify the retrieved named entity tokens into a set of predefined
 classes). Mostly, named entity recognition (NER) usually stands for both of the tasks performed jointly.
+
+
+A standard set of classification features for the NE task includes a broad
+variety of the following:
+• current surface word form,
+• word lemma (a morphologically motivated base or root form of the word,
+usually an output of a morphological analysis. In a broader sense it can be
+considered a label of the word in a word lexicon.),
+• word stem (an automatic reduction of inflected and derived word form to
+a base form, which necessarily does not have to be a morphologic lemma as
+in previous item and it even does not have to be a valid word form),
+• part-of-speech tags (POS tags),
+• the previous items applied on a window of a predefined number of preceding
+and following words,
+• rule-based orthographic features describing the current or surrounding word
+forms, such as word capitalization, first character capitalization, information
+about special characters such as hyphens, dots, question marks, etc.,
+• various regular expressions designed to reveal e-mail addresses, numbers,
+phone numbers, days, months and years, depending on the task. For example,
+time expression can be matched using the following regular expression
+([01]?[0-9]|2[0-3])[.:][0-5][0-9]([ap]m),
+• prefixes and suffixes of the current or surrounding surface word forms,
+• capitalization patterns in current and surrounding word forms.
+
