@@ -1,0 +1,10 @@
+# NER
+Named entity recognition:
+    two majer stages involved in NER
+       1. Named Entity Identification
+       2. Named Entity Classification
+       
+       
+ Named entity identification (the task is to correctly identify a named entity span without further classification, that
+is, to retrieve all named entity tokens) and named entity classification (the task is to correctly classify the retrieved named entity tokens into a set of predefined
+classes). Mostly, named entity recognition (NER) usually stands for both of the tasks performed jointly.
